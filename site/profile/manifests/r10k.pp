@@ -1,3 +1,5 @@
+# TODO: document this!
+
 class profile::r10k {
   class {'r10k':
     remote => 'https://github.com/jgingco/control-repo.git',
@@ -7,7 +9,7 @@ class profile::r10k {
     enable_ssl      => false,
   }
   class {'r10k::webhook':
-    user => 'root',
+    user  => 'root',
     group => 'root',
   }
 }
